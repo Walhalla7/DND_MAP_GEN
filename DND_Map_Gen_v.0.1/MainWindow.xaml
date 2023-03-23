@@ -7,9 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" InputScope="Url">
     <Grid>
-        <Button VerticalAlignment="Center" Padding="10" HorizontalAlignment="Center" Click="SwitchToMap_Click">
-            <TextBlock Margin="10,0">Generate Map</TextBlock>
-        </Button>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="50" FontWeight="Bold">
+                MAP GENERATOR
+            </Label>
+            <Button VerticalAlignment="Center" Padding="10" HorizontalAlignment="Center" Click="SwitchToMap_Click">
+                <TextBlock Margin="10,0">Generate Map</TextBlock>
+            </Button>
+        </StackPanel>
     </Grid>
     
 </Window>
