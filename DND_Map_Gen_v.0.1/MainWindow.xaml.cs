@@ -27,8 +27,10 @@ namespace DND_Map_Gen_v._0._1
 
         private void SwitchToMap_Click(object sender, RoutedEventArgs e)
         {
-            Map_View MV = new Map_View();
-            this.Content = MV;
+            NavigationWindow window = new NavigationWindow();
+            window.Source = new Uri("Map_View.xaml", UriKind.Relative);
+            window.Show();
+            this.Visibility = Visibility.Hidden;
         }
     }
 }

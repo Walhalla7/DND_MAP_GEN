@@ -26,9 +26,14 @@
         </Border>
         <StackPanel VerticalAlignment="Center" Orientation="Vertical" Grid.Column="0" Grid.Row="1" >
             <Image Name="BitmapImage" Height="300" Width="300" Grid.Column="0" Grid.Row="1"/>
-            <Button VerticalAlignment="Center" Padding="10" HorizontalAlignment="Center" Click="RenderAgain_Click">
-                <TextBlock Margin="10,0">Try Again</TextBlock>
-            </Button>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button VerticalAlignment="Center" Padding="10" HorizontalAlignment="Center" Click="RenderAgain_Click">
+                    <TextBlock Margin="10,0">Try Again</TextBlock>
+                </Button>
+                <Button VerticalAlignment="Center" Padding="10" HorizontalAlignment="Center" Click="BackToMenu_Click">
+                    <TextBlock Margin="10,0">Go Back</TextBlock>
+                </Button>
+            </StackPanel>
         </StackPanel>
         
     </Grid>

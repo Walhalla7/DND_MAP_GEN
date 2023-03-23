@@ -76,6 +76,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BackgroundMapGeneration.cs" />
     <Compile Include="Detail_View.xaml.cs">
       <DependentUpon>Detail_View.xaml</DependentUpon>
     </Compile>
