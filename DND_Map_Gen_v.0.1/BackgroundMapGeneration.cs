@@ -8,6 +8,7 @@ using System.Windows.Interop;
 using System.Windows.Media.Imaging;
 using System.Windows.Media;
 using System.Windows;
+using System.Diagnostics;
 
 namespace DND_Map_Gen_v._0._1
 {
@@ -18,6 +19,7 @@ namespace DND_Map_Gen_v._0._1
         public BackgroundMapGeneration(int height, int width)
         {
             worldMapLayout = new char[height, width];
+            populateMap();
         }
 
         public char[,] getMapLayout()
@@ -35,7 +37,8 @@ namespace DND_Map_Gen_v._0._1
                 for (int j = 0; j < mapWidth; j++)
                 {
                     int random = rnd.Next(10);
-                    if (i < (1/5 * mapHeight) || i > (4 / 5 * mapHeight) || j < (1 / 5 * mapWidth) || j > (4 / 5 * mapWidth))
+
+                    if (i > (0.2 * mapHeight) && i < (0.8 * mapHeight) && j > (0.2 * mapWidth) && j < (0.8 * mapWidth))
                     {
                         if (random < 1)
                         {
